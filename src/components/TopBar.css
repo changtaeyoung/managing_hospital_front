@@ -1,0 +1,96 @@
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 20px;
+    position: absolute;
+    height: 80px;
+    top: 0;
+    right: 0;
+    left: 0;    
+    padding: 20px 20px 20px 20px;
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.12);
+  }
+  .rectangle {
+    flex-shrink: 0;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 100px;
+  }
+  .title {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    min-width: 0;
+    height: 36px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 2;
+  }
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 40px;
+    position: relative;
+    width: 524px;
+    background: #ffffff;
+    z-index: 3;
+  }
+  .home-tab {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 24px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 4;
+  }
+  .medicalrecords-tab {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 24px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 5;
+  }
+  .materials-tab {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 24px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 6;
+  }

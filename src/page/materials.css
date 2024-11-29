@@ -1,0 +1,22 @@
+/* materials.css (혹은 앱 내의 스타일 파일에 추가) */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px; /* 셀 간격을 띄웁니다 */
+    margin-top: 20px; /* 테이블과 상단 요소 간 간격을 줍니다 */
+  }
+  
+  th, td {
+    padding: 10px; /* 셀 내부 여백 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    border: 1px solid #ddd; /* 셀에 테두리 추가 */
+  }
+  
+  th {
+    background-color: #f4f4f4; /* 헤더 셀 배경색 */
+  }
+  
+  h1, h3 {
+    margin-bottom: 10px; /* 제목 아래 여백 */
+  }
+  
