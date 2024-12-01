@@ -6,9 +6,16 @@ import ProfileBar from "../components/ProfileBar";
 
 const home = () => {
   const navigate = useNavigate(); // 페이지 이동을 위한 hook
+  const user_role = sessionStorage.getItem("role");
 
   const handleMedicalRecordsClick = () => {
-    navigate("/manage-medicalrecords"); // 환자 진료 기록 관리
+    if(user_role === "doctor"){
+      navigate("/manage-medicalrecords"); // 환자 진료 기록 관리
+    }
+    else{
+      alert("진료기록은 의사만 가능합니다.");
+    }
+    
   };
 
   const handleMaterialsClick = () => {

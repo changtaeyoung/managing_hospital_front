@@ -38,7 +38,7 @@ export default function DoctorLogin() {
     setLoginCheck(false);
     sessionStorage.setItem("token", result.token);
     sessionStorage.setItem("email", result.email);
-    sessionStorage.setItem("role", result.role);
+    sessionStorage.setItem("role", "doctor");
     console.log("로그인 성공, 이메일 주소: " + result.email);
     navigate('/home');
     

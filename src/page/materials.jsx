@@ -81,7 +81,9 @@ const Materials = () => {
 
   // 자재 리스트 출력
   const renderMaterialList = (list) => {
-    return list.map((material, index) => (
+    return list
+    .filter((material) => material.stock > 0) // stock이 0보다 큰 항목만 표시
+    .map((material, index) => (
       <tr key={index}>
         <td>{material.name}</td>
         <td>{material.purchaseDate.split('T')[0]}</td> {/* 날짜에서 'T' 이후 제거 */}

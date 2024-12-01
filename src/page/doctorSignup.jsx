@@ -16,7 +16,7 @@ export default function DoctorSignup() {
 
     const handleSignup = async (e) => {
         e.preventDefault();
-
+    
         if (!name || !email || !password || !specialty) {
             console.log("모든 필드를 입력해주세요.");
             setFieldError(true);

@@ -151,4 +151,63 @@
     background-color: #f1f1f1;
     margin-top: 30px;
   }
+
+  /* medicalRecords.css */
+
+/* 전체 진료 기록 목록 컨테이너 */
+.record-list {
+  margin-top: 15px;
+  max-height: 300px; /* 원하는 최대 높이를 설정 */
+  overflow-y: auto;  /* 세로 스크롤을 활성화 */
+}
+
+/* 진료 기록 하나하나의 박스 스타일 */
+.record-box {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 각 입력 필드의 스타일 */
+.form-group {
+  flex: 1;
+  margin-right: 10px;
+}
+
+/* 방문일 입력 필드에만 글자 크기 조정 */
+.record-box .form-group label {
+  font-size: 1rem; /* 라벨 글자 크기 조정 */
+}
+
+.record-box .form-group input[type="text"] {
+  font-size: 0.875rem; /* 입력 필드 글자 크기 조정 */
+  padding: 8px; /* 패딩을 적당히 조정 */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* 마지막 입력 필드의 오른쪽 여백 없애기 */
+.form-group:last-child {
+  margin-right: 0;
+}
+
+/* 라벨 스타일 */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* 입력 필드 스타일 */
+input[type='text'] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
   
